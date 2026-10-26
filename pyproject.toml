@@ -1,7 +1,24 @@
 [project]
 name = "toxic-comment-classifier"
 version = "0.1.0"
-description = "Add your description here"
+description = "Real-time multilingual abusive language detection using AWS SageMaker"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "boto3>=1.43.118",
+    "dvc[s3]>=2.1.0",
+    "mlflow>=3.17.2",
+    "pandas>=3.1.0",
+    "sagemaker>=2.92.0",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.1",
+    "transformers>=4.35.2",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "mypy>=2.4.0",
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
