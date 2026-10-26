@@ -5,8 +5,8 @@ description = "Real-time multilingual abusive language detection using AWS SageM
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "boto3>=1.43.118",
-    "dvc[s3]>=2.1.0",
+    "dvc>=3.67.1",
+    "dvc-s3>=3.3.0",
     "mlflow>=3.17.2",
     "pandas>=3.1.0",
     "sagemaker>=2.92.0",
@@ -16,9 +16,4 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = [
-    "jupyter>=1.1.1",
-    "mypy>=2.4.0",
-    "pytest>=9.1.1",
-    "ruff>=0.17.2",
-]
+dev = ["jupyter>=1.1.1", "mypy>=2.4.0", "pytest>=9.1.1", "ruff>=0.17.2"]
