@@ -11,3 +11,6 @@ wheels/
 
 # Vscode Spell Check
 .vscode
+
+# Datasets
+data/raw/*.csv
