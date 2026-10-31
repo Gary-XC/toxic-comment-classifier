@@ -14,3 +14,11 @@ wheels/
 
 # Datasets
 data/raw/*.csv
+
+# MLflow tracking and local databases
+mlruns/
+*.db
+
+# Large model binaries
+*.joblib
+*.pth
