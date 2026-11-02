@@ -11,6 +11,7 @@ dependencies = [
     "pandas>=3.1.0",
     "sagemaker>=2.92.0",
     "scikit-learn>=1.9.1",
+    "streamlit>=1.66.1",
     "torch>=2.14.1",
     "transformers>=4.35.2",
 ]
