@@ -22,3 +22,7 @@ mlruns/
 # Large model binaries
 *.joblib
 *.pth
+
+# Triton/Onnx Binary Weights
+*.onnx
+*.onnx.data

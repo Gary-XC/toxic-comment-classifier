@@ -7,7 +7,7 @@ from datetime import datetime
 
 import aiohttp
 
-API_URL = "http://127.0.0.1:8000/invocations" # 8000, to match the uvicorn server port
+API_URL = "http://127.0.0.1:8080/invocations" # 8000, to match the uvicorn server port
 
 # The Chat Simulation Messages
 PAYLOADS = [

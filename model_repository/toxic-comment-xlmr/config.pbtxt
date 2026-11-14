@@ -1,0 +1,28 @@
+name: "toxic-comment-xlmr"
+platform: "onnxruntime_onnx"
+max_batch_size: 32
+
+dynamic_batching {
+  max_queue_delay_microseconds: 20000
+}
+
+input [
+  {
+    name: "INPUT__0"
+    data_type: TYPE_INT64
+    dims: [ 128 ]
+  },
+  {
+    name: "INPUT__1"
+    data_type: TYPE_INT64
+    dims: [ 128 ]
+  }
+]
+
+output [
+  {
+    name: "OUTPUT__0"
+    data_type: TYPE_FP32
+    dims: [ 1 ]
+  }
+]
